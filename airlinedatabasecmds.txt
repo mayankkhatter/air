@@ -1,0 +1,43 @@
+
+SQL> create table BookingInformation2(cust_email varchar2(20), no_of_passengers
+number, creditcard_info varchar2(10), flightno varchar2(5));
+
+
+SQL> create table FlightInformation2(flightno varchar(5), airline varchar2(10),
+dep_city varchar2(10), arr_city varchar2(10), dep_date date, arr_date date, dep_
+time varchar2(10), arr_time varchar2(10), seats number, fare number);
+
+Table created.
+
+
+SQL> insert into FlightInformation2 values(1001, 'AirIndia','Pune','Chandigarh',
+ '30-11-2018','30-11-2018','6pm','8pm', 100, 4999);
+
+1 row created.
+
+SQL> insert into FlightInformation2 values(1002, 'JetAirways','Pune','Bengaluru'
+, '29-11-2018','29-11-2018','3pm','2pm', 100, 2999);
+
+1 row created.
+
+SQL> insert into FlightInformation2 values(1003, 'Vistara','Delhi','Pune', '1-12
+-2018','1-12-2018','2pm','3pm', 100, 1999);
+
+1 row created.
+
+SQL> insert into FlightInformation2 values(1004, 'Indigo','Hydrabad','Amritsar',
+ '2-12-2018','2-12-2018','1pm','4pm', 100, 5999);
+
+1 row created.
+
+SQL> insert into FlightInformation2 values(1005, 'AirAsia','Hydrabad','Chennai',
+ '3-12-2018','3-12-2018','1pm','8pm', 100, 7999);
+
+
+
+
+
+SQL> create table PassengerInformation2(BookingID number, PassengerName varchar2
+(40), FlightId number);
+
+Table created.
